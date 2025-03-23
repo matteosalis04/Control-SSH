@@ -48,10 +48,6 @@
 
 Once executed, *Guardian SSH* will apply security configurations to your SSH server. You can customize the settings by modifying the `guardian-ssh.conf` file.
 
-## Contributing
-
-Contributions and suggestions are welcome! Feel free to open issues or pull requests.
-
 ## License
 
 This project is distributed under the MIT License. See the [LICENSE](./LICENSE) file for details.
