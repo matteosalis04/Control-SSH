@@ -36,7 +36,7 @@ while true; do
         for user in $target; do 
             pid=$(lsof -i :22 -n -P | grep "ESTAB" | awk -F "sshd" '{print $2}' | awk '{print $1}')
             name=$(lsof -i :22 -n -P | grep "ESTAB" | awk -F "sshd" '{print $2}' | awk '{print $2}' | head -n 1)
-            kill $pid &> /dev/null
+            kill -9 $pid &> /dev/null
             echo "$user ha cercato di fare il furbo!" | tee -a $file_log
             echo "loggato con: $name" | tee -a $file_log            
         done 
