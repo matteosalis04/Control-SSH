@@ -31,7 +31,7 @@ while true; do
     if [[ ! -z $service ]]; then
         echo "Connessione ssh rilevata...... - $data" | tee -a $file_log
 
-        target_ssh=$(lsof -i :22 -n -P | grep "ESTAB" | awk -F "22->" '{print $2}' | awk '{print $1}' | awk -F ":" '{print $1}')
+        target=$(lsof -i :22 -n -P | grep "ESTAB" | awk -F "22->" '{print $2}' | awk '{print $1}' | awk -F ":" '{print $1}')
 
         for user in $target; do 
             pid=$(lsof -i :22 -n -P | grep "ESTAB" | awk -F "sshd" '{print $2}' | awk '{print $1}')
@@ -47,6 +47,6 @@ while true; do
 
     fi
 
-    sleep 10
+    sleep 5
     
 done
