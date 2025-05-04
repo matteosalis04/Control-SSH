@@ -1,10 +1,10 @@
-# ⛨️ Guardian SSH
+# ⛨️ Control SSH
 
 **Secure your SSH server with ease and reliability.**
 
 ## Description
 
-*Guardian SSH* is a Bash script designed to enhance the security of your SSH server. It automates the configuration of essential security settings, reducing the risk of unauthorized access and brute-force attacks.
+*Control SSH* is a Bash script designed to enhance the security of your SSH server. It automates the configuration of essential security settings, reducing the risk of unauthorized access and brute-force attacks.
 
 ## Features
 
@@ -23,13 +23,13 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/matteosalis04/Guardian-SSH.git
+   git clone https://github.com/matteosalis04/Control-SSH.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd Guardian-SSH
+   cd Control-SSH
    ```
 
 3. Make the script executable:
@@ -43,10 +43,6 @@
    ```bash
    sudo ./guardian-ssh.sh
    ```
-
-## Usage
-
-Once executed, *Guardian SSH* will apply security configurations to your SSH server. You can customize the settings by modifying the `guardian-ssh.conf` file.
 
 ## License
 
